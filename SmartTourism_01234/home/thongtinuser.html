@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+  data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Account settings - Account | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="../assets/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="../assets/js/config.js"></script>
+
+
+  <!-- radio css -->
+
+  <link rel="stylesheet" href="../radio/radio.css">
+
+  <!-- radio css -->
+  <!-- home css -->
+
+
+  <link rel="stylesheet" href="../css/home.css">
+  <!-- home css -->
+
+
+</head>
+
+<body>
+  <!-- Content wrapper -->
+  <div class="content-wrapper">
+    <!-- Content -->
+
+    <div class="container-xxl flex-grow-1 container-p-y">
+      <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Account Settings /</span> Account</h4>
+
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills flex-column flex-md-row mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user bx-tada-hover"></i> Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bx bx-history bx-tada"></i>
+                History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bx bxs-bell bx-tada"></i>
+                Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html"><i class="bx bxs-right-arrow-alt me-2"></i>
+                Come Back</a>
+            </li> 
+          <div class="card mb-4">
+            <h5 class="card-header">Profile Details</h5>
+            <!-- Account -->
+            <div class="card-body">
+              <div class="d-flex align-items-start align-items-sm-center gap-4">
+                <img src="../assets/img/avatars/1.png" alt="user-avatar" class="d-block rounded" height="100"
+                  width="100" id="uploadedAvatar" />
+                <div class="button-wrapper">
+                  <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                    <span class="d-none d-sm-block">Upload new photo</span>
+                    <i class="bx bx-upload d-block d-sm-none"></i>
+                    <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
+                  </label>
+                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                    <i class="bx bx-reset d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Reset</span>
+                  </button>
+
+                  <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                </div>
+              </div>
+            </div>
+            <hr class="my-0" />
+            <div class="card-body">
+              <form id="formAccountSettings">
+                <div class="row">
+                  <div class="mb-3 col-md-6">
+                    <label for="firstName" class="form-label">Name</label>
+                    <input class="form-control" type="text" id="firstName" name="first_name" placeholder="Name" />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label" for="country">Sex</label>
+                    <input class="form-control" type="text" id="firstName" name="Sex" placeholder="Name" />
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label" for="date">DateOfBirth</label>
+                    <div class="input-group input-group-merge">
+                      <input class="form-control" type="date" value="" id="date" />
+                    </div>
+                  </div>
+                  <div class="mb-3 col-md-6">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Address" />
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input class="form-control" type="text" id="email" name="email" placeholder="Email" readonly/>
+                  </div>
+
+                  <div class="mb-3 col-md-6">
+                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                    <div class="input-group input-group-merge">
+                      <span class="input-group-text">VN (+84)</span>
+                      <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Radio -->
+                <div>
+                  <h2>Select your color: </h2>
+
+                  <label class="red">
+                    <input type="radio" name="role" value="red">red<br />
+                    <div class="button"><span></span></div>
+                  </label>
+
+                  <label class="yellow">
+                    <input type="radio" name="role" value="yellow">yellow<br />
+                    <div class="button"><span></span></div>
+                  </label>
+
+                  <label class="lime">
+                    <input type="radio" name="role" value="skyblue">skyblue<br />
+                    <div class="button"><span></span></div>
+                  </label>
+
+                  <label class="green">
+                    <input type="radio" name="role" value="green">green<br />
+                    <div class="button"><span></span></div>
+                  </label>
+
+                  <label class="pink">
+                    <input type="radio" name="role" value="pink">pink<br />
+                    <div class="button"><span></span></div>
+                  </label>
+                  <label class="purple">
+                    <input type="radio" name="role" value="purple">purple<br />
+                    <div class="button"><span></span></div>
+                  </label>
+                  <label class="brown">
+                    <input type="radio" name="role" value="brown">brown<br />
+                    <div class="button"><span></span></div>
+                  </label>
+                  <label class="orange">
+                    <input type="radio" name="role" value="orange">orange<br />
+                    <div class="button"><span></span></div>
+                  </label>
+
+                  <p id="lblSelectedOption">You have selected no roles yet: </p><br />
+                  <!-- <button id="btnSubmit">Choose Color</button> -->
+                </div>
+                <!-- Radio -->
+
+
+                <div class="mt-2">
+                  <button type="button" class="btn btn-primary me-2" id="btnProfile">Save changes</button>
+                </div>
+              </form>
+            </div>
+            <!-- /Account -->
+          </div>
+          <div class="card">
+            <h5 class="card-header">Delete Account</h5>
+            <div class="card-body">
+              <div class="mb-3 col-12 mb-0">
+                <div class="alert alert-warning">
+                  <h6 class="alert-heading fw-bold mb-1">Are you sure you want to delete your account?</h6>
+                  <p class="mb-0">Once you delete your account, there is no going back. Please be certain.</p>
+                </div>
+              </div>
+              <form id="formAccountDeactivation">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" name="accountActivation" id="accountActivation" />
+                  <label class="form-check-label" for="accountActivation">I confirm my account Delete</label>
+                </div>
+                <button type="button" class="btn btn-danger deactivate-account" data-bs-toggle="modal"
+                  data-bs-target="#modalToggle">
+                  Delete Account
+                </button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- / Content -->
+      <!-- Toggle Between Modals -->
+      <div class="col-lg-4 col-md-6">
+        <!-- Modal 1-->
+        <div class="modal fade" id="modalToggle" aria-labelledby="modalToggleLabel" tabindex="-1" style="display: none"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalToggleLabel">Xóa Người Dùng ?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">Điều này sẽ xóa tất cả phụ thuộc liên quan đến người dùng ? Bạn chắc chắn ?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" id="btnDeleteAccount" class="btn btn-danger deactivate-account">Delete
+                  Account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Content -->
+  <!-- / Layout wrapper -->
+<!-- Kiemtraloi -->
+<Script src="./kiemtraloi.js"></Script>
+<!-- Kiemtraloi -->
+
+  <div class="buy-now">
+    <a href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/" target="_blank"
+      class="btn btn-danger btn-buy-now">Upgrade to Pro</a>
+  </div>
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../assets/vendor/libs/popper/popper.js"></script>
+  <script src="../assets/vendor/js/bootstrap.js"></script>
+  <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="../assets/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+
+  <!-- Main JS -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../assets/js/pages-account-settings-account.js"></script>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- radio js -->
+  <script src="../radio/radio.js"></script>
+  <!-- radio js -->
+
+  <!-- Firebase  -->
+
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth-compat.js"></script>
+  <!-- *******************************************************************************************
+         * TODO(DEVELOPER): Paste the initialization snippet from this dialog box:
+         * Firebase Console > Project Settings > Add App > Web.
+         ***************************************************************************************** -->
+  <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+  <script src="../js/config/firebaseConfig.js"></script>
+  <script src="../js/config/Cookie.js"></script>
+  <script src="../js/config/ShowToast.js"></script>
+  <script src="../js/auth/auth-login.js"></script>
+  <script src="../js/auth/auth-register.js"></script>
+  <script src="../js/dashboard/homeDashboard.js"></script>
+  <!-- <script src="../js/profile/profile.js"></script>
+  <script src="../js/user/deleteUser.js"></script>
+  <script src="../js/user/getListUser.js"></script>
+  <script src="../js/user/getUser.js"></script>-->
+  <script src="../js/globalVar.js"></script>
+  <script src="../js/profile/editprofile.js"></script>
+  <!-- Firebase  -->
+
+</body>
+
+</html>
